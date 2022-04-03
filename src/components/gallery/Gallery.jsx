@@ -1,4 +1,5 @@
 import React from 'react';
+import './_gallery.scss';
 
 export const Gallery = ({characters}) => {
   return (

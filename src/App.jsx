@@ -18,6 +18,14 @@ function App() {
     });
   };
 
+  const onPrevious = () => {
+    getCharacters(info.prev);
+  };
+
+  const onNext = () => {
+    getCharacters(info.next);
+  };
+
   useEffect(() => {
     getCharacters(url);
   }, []);
@@ -26,9 +34,9 @@ function App() {
     <div className='App'>
       <h2 className='title'>Rick and Morty Wiki</h2>
       <Searchbar />
-      <Pagination prev={info.prev} next={info.next} />
+      <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
       <Gallery characters={characters} />
-      <Pagination prev={info.prev} next={info.next} />
+      <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
     </div>
   );
 }
