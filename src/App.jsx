@@ -32,7 +32,9 @@ function App() {
 
   return (
     <div className='App'>
-      <h2 className='title'>Rick and Morty Wiki</h2>
+      <div className='navbar'>
+        <h2 className='title'>Rick and Morty Wiki</h2>
+      </div>
       <Searchbar />
       <Pagination prev={info.prev} next={info.next} onPrevious={onPrevious} onNext={onNext} />
       <Gallery characters={characters} />

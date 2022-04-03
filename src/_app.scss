@@ -1,5 +1,15 @@
-.title {
-  text-align: center;
-  background-color: rgb(155, 153, 153);
-  padding: 1rem;
+.App {
+  background: url('https://i.pinimg.com/originals/95/bb/bb/95bbbb15f01eb2f860d4b258bddb0519.jpg')
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .title {
+    background-color: rgba(12, 12, 12, 0.842);
+    padding: 1rem;
+    color: #fff;
+    font-size: 35px;
+  }
 }

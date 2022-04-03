@@ -1,4 +1,5 @@
 import React from 'react';
+import './_pagination.scss';
 
 const Pagination = ({prev, next, onPrevious, onNext}) => {
   const handlePrevious = () => {
@@ -10,9 +11,17 @@ const Pagination = ({prev, next, onPrevious, onNext}) => {
   };
 
   return (
-    <div>
-      {prev ? <button onClick={handlePrevious}>Previous</button> : null}
-      {next ? <button onClick={handleNext}>Next</button> : null}
+    <div className='pagination'>
+      {prev ? (
+        <button className='button' onClick={handlePrevious}>
+          Previous
+        </button>
+      ) : null}
+      {next ? (
+        <button className='button' onClick={handleNext}>
+          Next
+        </button>
+      ) : null}
     </div>
   );
 };
